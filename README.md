@@ -1,34 +1,72 @@
-# OrderNChaos Documentation (Local Version)
+# QianKun Technology - Blockchain Solutions Provider
 
-This is a local copy of the OrderNChaos documentation website for offline viewing.
+[🌐 Change Language | 切换语言](LANGUAGE.md)
 
-## Getting Started
+## About Us
 
-To view the documentation:
+QianKun Technology is an innovative company focused on blockchain technology development, composed of seasoned experts in the blockchain industry. We are committed to providing high-quality, secure, and reliable blockchain solutions to help businesses and organizations achieve digital transformation and embrace the future of decentralized finance (DeFi).
 
-1. Open the `index.html` file in any modern web browser (Chrome, Firefox, Safari, Edge, etc.)
-2. Navigate through the documentation using the sidebar navigation
+With deep technical expertise and rich industry experience, we have successfully developed various blockchain applications for numerous clients, covering comprehensive services from infrastructure to application layer. Our team is proficient in all major blockchain platforms and capable of transforming complex requirements into efficient technical implementations.
 
-## Structure
+## Our Services
 
-The documentation is organized into the following sections:
+### 🔗 Smart Contract Development
+- Contract design, coding, and auditing
+- Standard protocol implementation and customization
+- Multi-chain deployment and interoperability solutions
+- Security hardening and vulnerability fixes
 
-- **Overview**: Introduction to OrderNChaos, key differences, and quick start guide
-- **Project Launch**: Information about the Genesis Launch Auction and roadmap
-- **Mechanics**: Details about the technical mechanisms of the protocol
-- **Tokens**: Information about the $ORDER, $CHAOS, and $prCHAOS tokens
-- **More**: Additional information including contract addresses, token allocation, fees, and risks
+### 💻 DApp Development
+- Decentralized application frontend and backend development
+- User-friendly Web3 interface design
+- Wallet integration and authentication
+- Interactive data visualization
 
-## Features
+### 🎮 Blockchain Gaming
+- GameFi and Play-to-Earn model design
+- On-chain game logic implementation
+- NFT game asset integration
+- Virtual economy system construction
 
-- Full offline access to OrderNChaos documentation
-- Complete navigation structure matching the original website
-- Responsive design that works on desktop and mobile devices
+### 📈 Exchange Development
+- Centralized Exchange (CEX) setup
+- Decentralized Exchange (DEX) implementation
+- Liquidity pools and market-making mechanisms
+- Cross-chain trading solutions
 
-## Note
+### 🏢 Real-World Asset Tokenization (RWA)
+- Asset tokenization implementation
+- Compliance solutions
+- Asset tracking and verification systems
+- On-chain governance mechanism design
 
-This is a static HTML version of the documentation. The search functionality is not operational in this offline version.
+## 🌟 Our Flagship Project: OrderNChaos
 
-## Original Source
+OrderNChaos is our innovative DeFi protocol that combines stablecoins, liquidity mining, and zero-risk loans with advanced financial models to provide users with a new experience in crypto asset management.
 
-The original documentation can be found at: https://docs.ordernchaos.finance/ 
+### Core Features:
+- **Dual-Token Economic Model**: $CHAOS as a volatile asset and $ORDER as a super-stable coin, working together to form a balanced ecosystem
+- **Virtual Automated Market Maker (vAMM)**: Innovative pricing curve ensuring market liquidity and price stability
+- **Zero-Risk Loans**: Users can stake $CHAOS to obtain $ORDER with no liquidation risk while enjoying negative interest rate returns
+- **Staking Rewards**: Providing staking incentives through the $prCHAOS token, forming a long-term value capture mechanism
+- **Coming Soon**: Stableswap exchange mechanism and NFT Magic Power enhancement features
+
+The OrderNChaos protocol demonstrates our ability to design and implement complex DeFi systems, creating sustainable and stable value for users through innovative financial engineering and robust technical implementation.
+
+## Contact Us
+
+We are an experienced team of blockchain developers based in Hong Kong. Whether you're a startup, enterprise, or organization, we can provide professional blockchain technology consulting and development services. We look forward to collaborating with you to explore the limitless possibilities of blockchain technology!
+
+- **Telegram**: basecodebuilder
+- **GitHub**: Create an issue in our repository to contact us
+
+## Start Collaborating
+
+1. **Initial Consultation**: Contact us to share your project requirements and goals
+2. **Requirements Analysis**: Our expert team will deeply analyze your business scenarios and technical needs
+3. **Solution Design**: Custom-tailored blockchain solutions for your specific needs
+4. **Development Implementation**: Efficient development and testing
+5. **Deployment**: Assistance with system deployment and launch
+6. **Ongoing Support**: Technical support and system maintenance services
+
+Let's collaborate to create a better future driven by blockchain technology! 
