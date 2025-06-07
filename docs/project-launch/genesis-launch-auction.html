@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderNChaos Documentation - Genesis Launch Auction(GLA)</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">OrderNChaos</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="shortcut">CtrlK</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li class="nav-section">
+                        <span class="section-title">Overview</span>
+                        <ul>
+                            <li><a href="../../docs/overview/introduction.html">Introduction</a></li>
+                            <li><a href="../../docs/overview/whats-the-difference.html">What's the Difference</a></li>
+                            <li><a href="../../docs/overview/quick-start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Project Launch</span>
+                        <ul>
+                            <li><a href="../../docs/project-launch/genesis-launch-auction.html">Genesis Launch Auction(GLA)</a></li>
+                            <li><a href="../../docs/project-launch/roadmap.html">Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Mechanics</span>
+                        <ul>
+                            <li><a href="../../docs/mechanics/pricing-curve.html">Pricing Curve(vAMM)</a></li>
+                            <li><a href="../../docs/mechanics/staking-rewards.html">Staking Rewards($prCHAOS)</a></li>
+                            <li><a href="../../docs/mechanics/zero-risk-loans.html">Zero Risk Loans ($ORDER)</a></li>
+                            <li><a href="../../docs/mechanics/stableswap.html">Stableswap(Coming soon)</a></li>
+                            <li><a href="../../docs/mechanics/nft-magic-power.html">NFT Magic Power(Coming soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Tokens</span>
+                        <ul>
+                            <li><a href="../../docs/tokens/order.html">$ORDER</a></li>
+                            <li><a href="../../docs/tokens/chaos.html">$CHAOS</a></li>
+                            <li><a href="../../docs/tokens/prchaos.html">$prCHAOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">More</span>
+                        <ul>
+                            <li><a href="../../docs/more/addresses.html">Addresses</a></li>
+                            <li><a href="../../docs/more/token-allocation.html">Token allocation</a></li>
+                            <li><a href="../../docs/more/fees.html">Fees</a></li>
+                            <li><a href="../../docs/more/risks.html">Risks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="page-header">
+                    <h1>Genesis Launch Auction (GLA)</h1>
+                    <p>The fair and transparent launch mechanism for OrderNChaos</p>
+                    <div class="page-nav">
+                        <a href="../../docs/overview/quick-start.html" class="prev-link">Previous: Quick Start</a>
+                        <a href="../../docs/project-launch/roadmap.html" class="next-link">Next: Roadmap</a>
+                    </div>
+                    <p class="last-updated">Last updated 3 years ago</p>
+                </div>
+                
+                <div class="content-body">
+                    <h2>Introduction to the Genesis Launch Auction</h2>
+                    <p>The Genesis Launch Auction (GLA) is the fair and transparent mechanism through which the OrderNChaos protocol will distribute its initial supply of $CHAOS tokens. Unlike traditional token launches that often favor insiders or large investors, the GLA is designed to give everyone an equal opportunity to participate while establishing a market-driven initial price for $CHAOS.</p>
+                    
+                    <div style="background-color: #e8f5e9; padding: 15px; border-left: 4px solid #4caf50; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Key Benefits of the GLA</h4>
+                        <ul style="margin-bottom: 0;">
+                            <li><strong>Fair Distribution</strong>: All participants have equal access, with no preferential treatment</li>
+                            <li><strong>Price Discovery</strong>: The market determines the initial price of $CHAOS</li>
+                            <li><strong>Protocol Bootstrapping</strong>: Establishes the initial reserve that backs the floor price of $CHAOS</li>
+                            <li><strong>Community Building</strong>: Fosters a community of aligned stakeholders from day one</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>How the Genesis Launch Auction Works</h3>
+                    
+                    <h4>Auction Mechanics</h4>
+                    <p>The GLA follows a modified batch auction format:</p>
+                    
+                    <ol>
+                        <li><strong>Duration</strong>: The auction runs for 7 days (168 hours) to ensure global participation</li>
+                        <li><strong>Participation</strong>: Participants contribute stablecoins (USDC, USDT, DAI) to the auction pool</li>
+                        <li><strong>Dynamic Pricing</strong>: The final price is determined by total contributions divided by the number of $CHAOS tokens allocated for the auction</li>
+                        <li><strong>Token Distribution</strong>: At the end of the auction, participants receive $CHAOS tokens proportional to their contribution</li>
+                        <li><strong>Reserve Establishment</strong>: All contributed stablecoins become the initial reserve backing the floor price of $CHAOS</li>
+                    </ol>
+                    
+                    <h4>Auction Formula</h4>
+                    <p>The number of $CHAOS tokens a participant receives is calculated using the formula:</p>
+                    
+                    <div style="background-color: #f5f5f5; padding: 15px; text-align: center; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; margin: 20px 0;">
+                        CHAOS_received = User_contribution / Final_price
+                    </div>
+                    
+                    <p>Where:</p>
+                    <ul>
+                        <li><strong>CHAOS_received</strong>: The amount of $CHAOS tokens the participant receives</li>
+                        <li><strong>User_contribution</strong>: The amount of stablecoins the participant contributed</li>
+                        <li><strong>Final_price</strong>: The clearing price determined at the end of the auction (Total contributions / Total $CHAOS allocated)</li>
+                    </ul>
+                    
+                    <h3>GLA Timeline and Phases</h3>
+                    
+                    <div style="width: 100%; background-color: #f0f8ff; padding: 20px; margin: 20px 0; border-radius: 8px;">
+                        <h4 style="margin-top: 0; text-align: center;">GLA Timeline</h4>
+                        <div style="display: flex; justify-content: space-between; margin: 30px 0; position: relative;">
+                            <div style="position: absolute; top: 50%; left: 0; right: 0; height: 4px; background-color: #0052cc; transform: translateY(-50%);"></div>
+                            
+                            <div style="position: relative; text-align: center; z-index: 2;">
+                                <div style="width: 30px; height: 30px; background-color: #0052cc; border-radius: 50%; margin: 0 auto;"></div>
+                                <p style="margin-top: 10px;"><strong>Pre-Auction<br/>Phase</strong><br/>7 Days</p>
+                            </div>
+                            
+                            <div style="position: relative; text-align: center; z-index: 2;">
+                                <div style="width: 30px; height: 30px; background-color: #0052cc; border-radius: 50%; margin: 0 auto;"></div>
+                                <p style="margin-top: 10px;"><strong>Auction<br/>Phase</strong><br/>7 Days</p>
+                            </div>
+                            
+                            <div style="position: relative; text-align: center; z-index: 2;">
+                                <div style="width: 30px; height: 30px; background-color: #0052cc; border-radius: 50%; margin: 0 auto;"></div>
+                                <p style="margin-top: 10px;"><strong>Distribution<br/>Phase</strong><br/>2 Days</p>
+                            </div>
+                            
+                            <div style="position: relative; text-align: center; z-index: 2;">
+                                <div style="width: 30px; height: 30px; background-color: #0052cc; border-radius: 50%; margin: 0 auto;"></div>
+                                <p style="margin-top: 10px;"><strong>Protocol<br/>Launch</strong><br/>Day 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4>Phase 1: Pre-Auction (7 Days)</h4>
+                    <ul>
+                        <li>Community education and awareness about the GLA</li>
+                        <li>Documentation release and technical preparation</li>
+                        <li>Smart contract audits published</li>
+                        <li>Website and auction interface testing</li>
+                    </ul>
+                    
+                    <h4>Phase 2: Auction (7 Days)</h4>
+                    <ul>
+                        <li>Auction officially begins</li>
+                        <li>Participants contribute stablecoins to the auction pool</li>
+                        <li>Real-time statistics displayed on the auction dashboard</li>
+                        <li>Community discussions and engagement activities</li>
+                    </ul>
+                    
+                    <h4>Phase 3: Distribution (2 Days)</h4>
+                    <ul>
+                        <li>Auction ends and final price is calculated</li>
+                        <li>Smart contracts process contributions and prepare token distribution</li>
+                        <li>Final audit of auction results</li>
+                        <li>$CHAOS tokens are distributed to participants</li>
+                    </ul>
+                    
+                    <h4>Phase 4: Protocol Launch (Day 0)</h4>
+                    <ul>
+                        <li>OrderNChaos protocol officially launches</li>
+                        <li>All core functionalities become available</li>
+                        <li>Staking for $prCHAOS rewards begins</li>
+                        <li>Zero Risk Loans feature activates</li>
+                    </ul>
+                    
+                    <h3>GLA Allocation and Parameters</h3>
+                    
+                    <h4>Token Allocation</h4>
+                    <p>The GLA will distribute 10% of the total $CHAOS supply (10,000,000 $CHAOS tokens).</p>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Example Scenario</h4>
+                        <p>If the total contributions to the GLA amount to $20,000,000, the clearing price would be:</p>
+                        <p style="font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; margin: 10px 0; text-align: center;">
+                            Final_price = $20,000,000 / 10,000,000 $CHAOS = $2 per $CHAOS
+                        </p>
+                        <p>A participant who contributed $10,000 would receive:</p>
+                        <p style="font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; margin: 10px 0; text-align: center;">
+                            CHAOS_received = $10,000 / $2 = 5,000 $CHAOS
+                        </p>
+                    </div>
+                    
+                    <h4>Minimum and Maximum Contribution</h4>
+                    <ul>
+                        <li><strong>Minimum Contribution</strong>: $100 equivalent in stablecoins</li>
+                        <li><strong>Maximum Contribution</strong>: None (to allow for institutional participation)</li>
+                    </ul>
+                    
+                    <h4>Accepted Stablecoins</h4>
+                    <ul>
+                        <li>USDC</li>
+                        <li>USDT</li>
+                        <li>DAI</li>
+                    </ul>
+                    
+                    <h3>How to Participate in the GLA</h3>
+                    
+                    <h4>Step-by-Step Guide</h4>
+                    <ol>
+                        <li><strong>Preparation</strong>: Ensure you have stablecoins (USDC, USDT, or DAI) in your wallet and enough ETH for gas fees</li>
+                        <li><strong>Visit the Auction Site</strong>: Go to <a href="https://gla.ordernchaos.finance" target="_blank">https://gla.ordernchaos.finance</a> during the auction period</li>
+                        <li><strong>Connect Wallet</strong>: Connect your Web3 wallet (MetaMask, WalletConnect, etc.)</li>
+                        <li><strong>Specify Contribution</strong>: Enter the amount of stablecoins you wish to contribute</li>
+                        <li><strong>Approve Tokens</strong>: Approve the auction contract to use your stablecoins</li>
+                        <li><strong>Confirm Contribution</strong>: Confirm your contribution transaction</li>
+                        <li><strong>Track Progress</strong>: Monitor the auction dashboard for real-time statistics</li>
+                        <li><strong>Receive $CHAOS</strong>: After the auction ends, claim your $CHAOS tokens through the same interface</li>
+                    </ol>
+                    
+                    <h4>Auction Dashboard Features</h4>
+                    <ul>
+                        <li><strong>Total Contributions</strong>: Real-time tracking of all stablecoins contributed</li>
+                        <li><strong>Current Price</strong>: The estimated clearing price based on current contributions</li>
+                        <li><strong>Time Remaining</strong>: Countdown to the end of the auction</li>
+                        <li><strong>Your Contribution</strong>: Summary of your personal contributions</li>
+                        <li><strong>Estimated Allocation</strong>: Projected amount of $CHAOS you will receive</li>
+                    </ul>
+                    
+                    <h3>Post-Auction Protocol Launch</h3>
+                    
+                    <p>After the successful completion of the GLA, the OrderNChaos protocol will officially launch with the following features available immediately:</p>
+                    
+                    <ul>
+                        <li><strong>$CHAOS Trading</strong>: Buy and sell $CHAOS through the protocol's vAMM</li>
+                        <li><strong>Staking</strong>: Stake $CHAOS to earn $prCHAOS rewards</li>
+                        <li><strong>Zero Risk Loans</strong>: Mint $ORDER stablecoins against staked $CHAOS</li>
+                        <li><strong>Analytics Dashboard</strong>: View key protocol metrics and your personal statistics</li>
+                    </ul>
+                    
+                    <p>The initial floor price of $CHAOS will be set based on the GLA results, providing immediate stability and downside protection for all token holders.</p>
+                    
+                    <h3>FAQs about the Genesis Launch Auction</h3>
+                    
+                    <div style="margin: 20px 0;">
+                        <h4>What happens if I contribute multiple times?</h4>
+                        <p>All your contributions will be added together for the purpose of calculating your $CHAOS allocation. You can contribute as many times as you wish during the auction period.</p>
+                        
+                        <h4>Can I withdraw my contribution during the auction?</h4>
+                        <p>No, all contributions are final and cannot be withdrawn once confirmed. This ensures fairness and prevents last-minute manipulation of the auction.</p>
+                        
+                        <h4>What if the auction doesn't reach a minimum threshold?</h4>
+                        <p>There is no minimum threshold for the GLA. The auction will proceed regardless of the total amount contributed, and the clearing price will be calculated accordingly.</p>
+                        
+                        <h4>Will there be any bonuses for early participants?</h4>
+                        <p>No, all participants will receive the same price regardless of when they contribute during the auction period. This ensures fairness for participants across all time zones.</p>
+                        
+                        <h4>How is the floor price of $CHAOS determined after the auction?</h4>
+                        <p>The initial floor price will be set at a percentage of the clearing price, with the exact ratio determined by the protocol parameters. This creates immediate stability and downside protection.</p>
+                    </div>
+                    
+                    <p>For more information about the OrderNChaos protocol's long-term development plans, see the <a href="../../docs/project-launch/roadmap.html">Roadmap</a> section.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Powered by GitBook</p>
+        </footer>
+    </div>
+</body>
+</html> 

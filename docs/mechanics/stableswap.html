@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderNChaos Documentation - Stableswap</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">OrderNChaos</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="shortcut">CtrlK</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li class="nav-section">
+                        <span class="section-title">Overview</span>
+                        <ul>
+                            <li><a href="../../docs/overview/introduction.html">Introduction</a></li>
+                            <li><a href="../../docs/overview/whats-the-difference.html">What's the Difference</a></li>
+                            <li><a href="../../docs/overview/quick-start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Project Launch</span>
+                        <ul>
+                            <li><a href="../../docs/project-launch/genesis-launch-auction.html">Genesis Launch Auction(GLA)</a></li>
+                            <li><a href="../../docs/project-launch/roadmap.html">Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Mechanics</span>
+                        <ul>
+                            <li><a href="../../docs/mechanics/pricing-curve.html">Pricing Curve(vAMM)</a></li>
+                            <li><a href="../../docs/mechanics/staking-rewards.html">Staking Rewards($prCHAOS)</a></li>
+                            <li><a href="../../docs/mechanics/zero-risk-loans.html">Zero Risk Loans ($ORDER)</a></li>
+                            <li><a href="../../docs/mechanics/stableswap.html">Stableswap(Coming soon)</a></li>
+                            <li><a href="../../docs/mechanics/nft-magic-power.html">NFT Magic Power(Coming soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Tokens</span>
+                        <ul>
+                            <li><a href="../../docs/tokens/order.html">$ORDER</a></li>
+                            <li><a href="../../docs/tokens/chaos.html">$CHAOS</a></li>
+                            <li><a href="../../docs/tokens/prchaos.html">$prCHAOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">More</span>
+                        <ul>
+                            <li><a href="../../docs/more/addresses.html">Addresses</a></li>
+                            <li><a href="../../docs/more/token-allocation.html">Token allocation</a></li>
+                            <li><a href="../../docs/more/fees.html">Fees</a></li>
+                            <li><a href="../../docs/more/risks.html">Risks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="page-header">
+                    <h1>Stableswap (Coming Soon)</h1>
+                    <p>Efficient exchange mechanism for $ORDER and other stablecoins</p>
+                    <div class="page-nav">
+                        <a href="../../docs/mechanics/zero-risk-loans.html" class="prev-link">Previous: Zero Risk Loans ($ORDER)</a>
+                        <a href="../../docs/mechanics/nft-magic-power.html" class="next-link">Next: NFT Magic Power(Coming soon)</a>
+                    </div>
+                    <p class="last-updated">Last updated 3 years ago</p>
+                </div>
+                
+                <div class="content-body">
+                    <div style="background-color: #e3f2fd; padding: 15px; border-left: 4px solid #2196f3; margin: 20px 0; display: flex; align-items: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 15px;">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        <div>
+                            <h4 style="margin-top: 0; color: #0d47a1;">Coming Soon</h4>
+                            <p style="margin-bottom: 0;">Stableswap is scheduled for release in Q1 2024. This documentation provides a preview of the planned functionality and is subject to change as development progresses.</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Introduction to Stableswap</h2>
+                    <p>Stableswap is a specialized exchange mechanism designed to provide highly efficient swaps between $ORDER and other stablecoins. Unlike traditional AMMs that use a constant product formula (x*y=k), Stableswap employs a specialized invariant curve optimized for assets that should trade at or near parity.</p>
+                    
+                    <p>This feature will enable users to easily move between $ORDER and other stablecoins (such as USDC, USDT, and DAI) with minimal slippage, even for large trades, while providing additional utility and liquidity for the $ORDER token.</p>
+                    
+                    <h2>Core Concepts</h2>
+                    
+                    <h3>Specialized Curve for Stablecoins</h3>
+                    <p>Stableswap utilizes a modified StableSwap invariant curve, similar to those pioneered by Curve Finance, but with specific optimizations for $ORDER:</p>
+                    
+                    <div style="width: 100%; text-align: center; margin: 30px 0;">
+                        <img src="../../images/stableswap-curve.png" alt="Stableswap Curve Comparison" style="max-width: 80%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #666;">Comparison of Stableswap curve (blue) vs Constant Product curve (red)</p>
+                    </div>
+                    
+                    <p>The key features of the curve include:</p>
+                    <ul>
+                        <li><strong>Concentrated Liquidity</strong>: Most liquidity is concentrated around the 1:1 price ratio, providing excellent swap efficiency</li>
+                        <li><strong>Dynamic Amplification Factor</strong>: Adjusts based on market conditions to optimize stability</li>
+                        <li><strong>Asymmetric Design</strong>: Special parameters to account for $ORDER's unique backing mechanism</li>
+                        <li><strong>Low Fee Structure</strong>: Just 0.04% swap fee, significantly lower than traditional AMMs</li>
+                    </ul>
+                    
+                    <h3>Multi-Pool Design</h3>
+                    <p>The Stableswap feature will include multiple pools to enhance liquidity and utility:</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Pool</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Assets</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Target Launch</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">ORDER/USDC</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$ORDER + USDC</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Initial launch</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">ORDER/USDT</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$ORDER + USDT</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Initial launch</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">ORDER/DAI</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$ORDER + DAI</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Initial launch</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">3Pool</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$ORDER + USDC + USDT + DAI</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Phase 2</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">MetaPool</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$ORDER + [other stablecoin LP tokens]</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Phase 3</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Peg Maintenance Mechanisms</h3>
+                    <p>To help maintain $ORDER's peg to $1, the Stableswap includes several specialized mechanisms:</p>
+                    
+                    <ul>
+                        <li><strong>Dynamic Fees</strong>: Fee rates adjust based on deviation from the peg</li>
+                        <li><strong>Arbitrage Incentives</strong>: Protocol incentives for arbitrageurs who help restore the peg</li>
+                        <li><strong>Protocol-Owned Liquidity</strong>: A portion of protocol treasury will provide baseline liquidity</li>
+                        <li><strong>Redemption Backstop</strong>: $ORDER can always be redeemed against collateral at floor price</li>
+                    </ul>
+                    
+                    <h2>Key Features</h2>
+                    
+                    <h3>Low Slippage Swaps</h3>
+                    <p>The specialized curve enables extremely efficient swaps, particularly for large orders:</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Trade Size</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Stableswap Slippage</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Typical AMM Slippage</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$10,000</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.01%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.5%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$100,000</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.05%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">5%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">$1,000,000</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.3%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">30%+</td>
+                        </tr>
+                    </table>
+                    
+                    <p><em>Note: The slippage figures are estimates based on expected liquidity levels and may vary based on actual market conditions.</em></p>
+                    
+                    <h3>Liquidity Provider Incentives</h3>
+                    <p>The Stableswap feature will include robust incentives for liquidity providers:</p>
+                    
+                    <ul>
+                        <li><strong>Trading Fees</strong>: LPs earn a share of the 0.04% trading fees</li>
+                        <li><strong>Boosted Yields</strong>: Additional rewards for long-term liquidity providers</li>
+                        <li><strong>Governance Rights</strong>: Enhanced voting power in future DAO governance</li>
+                        <li><strong>Priority Access</strong>: Early access to new features and pools</li>
+                    </ul>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">LP Token Utility</h4>
+                        <p style="margin-bottom: 0;">Liquidity provider tokens (LP tokens) received when providing liquidity to Stableswap pools will have additional utility within the OrderNChaos ecosystem, including eligibility for future NFT drops and exclusive protocol features.</p>
+                    </div>
+                    
+                    <h3>Smart Order Routing</h3>
+                    <p>The Stableswap interface will include an advanced routing algorithm that:</p>
+                    
+                    <ul>
+                        <li>Automatically splits orders across multiple pools for optimal execution</li>
+                        <li>Considers gas costs when determining optimal routes</li>
+                        <li>Supports complex routes involving multiple stablecoins</li>
+                        <li>Provides transparent price impact and fee information</li>
+                    </ul>
+                    
+                    <h2>Technical Implementation Preview</h2>
+                    <p>While the final implementation may change, here's a preliminary look at how Stableswap will be structured:</p>
+                    
+                    <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin: 20px 0; font-family: monospace; overflow-x: auto;">
+<pre>// Simplified example of the StableSwap pool contract
+contract OrderStableSwap {
+    // The StableSwap invariant: A * sum(x_i) + D = A * D * n^n / (prod(x_i) * n^n)
+    // where A is the amplification coefficient, n is the number of coins,
+    // x_i are the balances, and D is the invariant
+    
+    uint256 public A;              // Amplification coefficient
+    uint256[] public balances;     // Balances of each coin
+    uint256 public fee;            // Fee (0.04% = 4 / 10000)
+    
+    // Main swap function with optimized curve for stablecoins
+    function swap(
+        uint256 i,                 // Input coin index
+        uint256 j,                 // Output coin index
+        uint256 dx,                // Input amount
+        uint256 minDy             // Minimum output amount
+    ) external returns (uint256) {
+        // Logic for calculating output amount based on specialized curve
+        // ...
+    }
+    
+    // Add liquidity function
+    function addLiquidity(
+        uint256[] calldata amounts,    // Amounts of each coin
+        uint256 minLpAmount           // Minimum LP tokens to receive
+    ) external returns (uint256) {
+        // Logic for adding liquidity
+        // ...
+    }
+    
+    // Remove liquidity function
+    function removeLiquidity(
+        uint256 lpAmount,              // LP tokens to burn
+        uint256[] calldata minAmounts  // Minimum amounts of each coin
+    ) external returns (uint256[] memory) {
+        // Logic for removing liquidity
+        // ...
+    }
+    
+    // Additional features for peg maintenance and dynamic parameters
+    // ...
+}</pre>
+                    </div>
+                    
+                    <p>The implementation will include additional features for security, gas optimization, and integration with the broader OrderNChaos ecosystem.</p>
+                    
+                    <h2>Integration with Zero Risk Loans</h2>
+                    <p>Stableswap will be tightly integrated with the Zero Risk Loans feature:</p>
+                    
+                    <ul>
+                        <li>Direct access to swap borrowed $ORDER for other stablecoins</li>
+                        <li>One-click borrowing and swapping in a single transaction</li>
+                        <li>Enhanced collateralization options for liquidity providers</li>
+                        <li>Streamlined debt repayment through any supported stablecoin</li>
+                    </ul>
+                    
+                    <div style="width: 100%; text-align: center; margin: 30px 0;">
+                        <div style="max-width: 600px; margin: 0 auto; background-color: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <h4>Flow of Assets in Stableswap</h4>
+                            <img src="../../images/stableswap-flow.png" alt="Stableswap Asset Flow" style="max-width: 100%; height: auto; margin: 15px 0; border-radius: 4px;">
+                            <p style="text-align: center; margin-top: 10px; font-size: 0.9em; color: #666;">The flow of assets through the Stableswap pools and their integration with other protocol components</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Economic Impact</h2>
+                    <p>The Stableswap feature is expected to have several positive impacts on the OrderNChaos ecosystem:</p>
+                    
+                    <ul>
+                        <li><strong>Enhanced $ORDER Utility</strong>: Creates additional use cases for the protocol's stablecoin</li>
+                        <li><strong>Improved Liquidity</strong>: Provides deep liquidity for $ORDER and supports its peg</li>
+                        <li><strong>Fee Generation</strong>: Creates a new revenue stream for the protocol and stakers</li>
+                        <li><strong>Cross-Protocol Opportunities</strong>: Opens possibilities for integration with other DeFi protocols</li>
+                    </ul>
+                    
+                    <h3>Fee Distribution</h3>
+                    <p>The 0.04% swap fee will be distributed as follows:</p>
+                    
+                    <div style="width: 100%; text-align: center; margin: 30px 0;">
+                        <div style="max-width: 600px; margin: 0 auto;">
+                            <h4>Stableswap Fee Distribution</h4>
+                            <div style="display: flex; height: 50px; border-radius: 4px; overflow: hidden; margin: 20px 0;">
+                                <div style="background-color: #4caf50; width: 50%; display: flex; align-items: center; justify-content: center; color: white;">50% - $CHAOS Stakers</div>
+                                <div style="background-color: #2196f3; width: 30%; display: flex; align-items: center; justify-content: center; color: white;">30% - Liquidity Providers</div>
+                                <div style="background-color: #ff9800; width: 20%; display: flex; align-items: center; justify-content: center; color: white;">20% - Protocol Treasury</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>This fee structure ensures that value from Stableswap activity flows to multiple stakeholders in the ecosystem, aligning incentives for long-term growth.</p>
+                    
+                    <h2>Anticipated Launch Schedule</h2>
+                    <p>The Stableswap feature is currently in development with the following anticipated milestones:</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Phase</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Timeline</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Features</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Testing & Auditing</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Q4 2023</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Code completion, comprehensive testing, and third-party security audits</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Testnet Deployment</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Early Q1 2024</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Deployment to testnet with basic swap functionality</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Initial Launch</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Mid Q1 2024</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Launch of core dual-asset pools (ORDER/USDC, ORDER/USDT, ORDER/DAI)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Expansion</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Late Q1 2024</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Launch of multi-asset 3Pool and additional features</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Advanced Features</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Q2 2024</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">MetaPool, boosted yields, and cross-chain deployment</td>
+                        </tr>
+                    </table>
+                    
+                    <div style="background-color: #e8f5e9; padding: 15px; border-left: 4px solid #4caf50; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Stay Updated</h4>
+                        <p style="margin-bottom: 0;">The Stableswap feature is in active development. Join our <a href="https://discord.gg/ordernchaos" target="_blank">Discord</a> and follow us on <a href="https://twitter.com/ordernchaos_fi" target="_blank">Twitter</a> to receive the latest updates and participate in community discussions about this upcoming feature.</p>
+                    </div>
+                    
+                    <h2>Conclusion</h2>
+                    <p>Stableswap represents a significant enhancement to the OrderNChaos ecosystem, providing efficient exchange mechanisms for $ORDER and other stablecoins. By implementing specialized curves optimized for stablecoin swaps, the feature will offer unparalleled liquidity and minimal slippage, further increasing the utility and adoption of the $ORDER stablecoin.</p>
+                    
+                    <p>This documentation will be updated with more detailed information as development progresses and we approach the launch date. We welcome community feedback on the planned features and implementation details.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Powered by GitBook</p>
+        </footer>
+    </div>
+</body>
+</html> 

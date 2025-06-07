@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderNChaos Documentation - Token Allocation</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">OrderNChaos</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="shortcut">CtrlK</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li class="nav-section">
+                        <span class="section-title">Overview</span>
+                        <ul>
+                            <li><a href="../../docs/overview/introduction.html">Introduction</a></li>
+                            <li><a href="../../docs/overview/whats-the-difference.html">What's the Difference</a></li>
+                            <li><a href="../../docs/overview/quick-start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Project Launch</span>
+                        <ul>
+                            <li><a href="../../docs/project-launch/genesis-launch-auction.html">Genesis Launch Auction(GLA)</a></li>
+                            <li><a href="../../docs/project-launch/roadmap.html">Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Mechanics</span>
+                        <ul>
+                            <li><a href="../../docs/mechanics/pricing-curve.html">Pricing Curve(vAMM)</a></li>
+                            <li><a href="../../docs/mechanics/staking-rewards.html">Staking Rewards($prCHAOS)</a></li>
+                            <li><a href="../../docs/mechanics/zero-risk-loans.html">Zero Risk Loans ($ORDER)</a></li>
+                            <li><a href="../../docs/mechanics/stableswap.html">Stableswap(Coming soon)</a></li>
+                            <li><a href="../../docs/mechanics/nft-magic-power.html">NFT Magic Power(Coming soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Tokens</span>
+                        <ul>
+                            <li><a href="../../docs/tokens/order.html">$ORDER</a></li>
+                            <li><a href="../../docs/tokens/chaos.html">$CHAOS</a></li>
+                            <li><a href="../../docs/tokens/prchaos.html">$prCHAOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">More</span>
+                        <ul>
+                            <li><a href="../../docs/more/addresses.html">Addresses</a></li>
+                            <li><a href="../../docs/more/token-allocation.html">Token allocation</a></li>
+                            <li><a href="../../docs/more/fees.html">Fees</a></li>
+                            <li><a href="../../docs/more/risks.html">Risks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="page-header">
+                    <h1>Token Allocation</h1>
+                    <p>How tokens are allocated in the OrderNChaos ecosystem</p>
+                    <div class="page-nav">
+                        <a href="../../docs/more/addresses.html" class="prev-link">Previous: Addresses</a>
+                        <a href="../../docs/more/fees.html" class="next-link">Next: Fees</a>
+                    </div>
+                    <p class="last-updated">Last updated 3 years ago</p>
+                </div>
+                
+                <div class="content-body">
+                    <h2>Token Allocation Philosophy</h2>
+                    
+                    <div style="background-color: #e8f5e9; padding: 15px; border-left: 4px solid #4caf50; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Zero Pre-Allocation Model</h4>
+                        <p style="margin-bottom: 0;">OrderNChaos follows a radically fair distribution model with zero pre-allocation to team, investors, or insiders. Every token is backed by real value and can only be created through market mechanisms or protocol participation.</p>
+                    </div>
+                    
+                    <p>$CHAOS & $ORDER are each token with intrinsic value. They cannot be minted out of thin air, and they never are. All $CHAOS tokens require at least their floor value's worth of liquidity in the protocol-owned market. All $ORDER tokens require at least their notional value of the collateral ($CHAOS) locked in the protocol.</p>
+                    
+                    <p>There are no "team allocations" of <code>$ORDER</code>, <code>$CHAOS</code>, or <code>$prCHAOS</code> tokens nor an "emission schedule" for their creation. OrderNChaos does not have a "fully diluted value."</p>
+                    
+                    <p>The protocol development, marketing, content-creation, and bug bounty campaigns are all funded through sustainable protocol fees, creating a self-sustaining ecosystem without requiring token inflation.</p>
+                    
+                    <h2>Initial Distribution: Genesis Launch Auction (GLA)</h2>
+                    
+                    <p>The Genesis Launch Auction (GLA) is the only source of initial $CHAOS tokens. This fair launch mechanism has the following characteristics:</p>
+                    
+                    <ul>
+                        <li><strong>Total Initial Supply</strong>: 1,000,000 $CHAOS tokens available through the GLA</li>
+                        <li><strong>Duration</strong>: 7 days (168 hours)</li>
+                        <li><strong>Participation</strong>: Open to anyone, with equal access for all participants</li>
+                        <li><strong>Minimum Price</strong>: Starting at $1 per $CHAOS</li>
+                        <li><strong>Maximum Price</strong>: Determined by market demand during the auction</li>
+                        <li><strong>Price Increase</strong>: Price increases linearly throughout the auction</li>
+                    </ul>
+                    
+                    <p>All funds raised in the GLA are permanently locked in the protocol as the initial liquidity reserve, establishing the irreversible floor price for $CHAOS.</p>
+                    
+                    <div style="width: 100%; text-align: center; margin: 30px 0;">
+                        <div style="max-width: 600px; margin: 0 auto; background-color: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <h4>Genesis Launch Auction Distribution</h4>
+                            <div style="display: flex; height: 50px; border-radius: 4px; overflow: hidden; margin: 20px 0;">
+                                <div style="background-color: #4caf50; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">100% - Public Auction Participants</div>
+                            </div>
+                            <p style="text-align: center; margin-top: 10px; font-size: 0.9em;">1,000,000 $CHAOS tokens (100% of initial supply)</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Token Supply Mechanics</h2>
+                    
+                    <h3>$CHAOS Supply</h3>
+                    <p>The supply of $CHAOS can only increase when:</p>
+                    <ul>
+                        <li>New liquidity is added to the protocol-owned market</li>
+                        <li>The price of $CHAOS increases above its floor value</li>
+                        <li>Users purchase $CHAOS tokens from the protocol</li>
+                        <li>Users convert $prCHAOS rewards to $CHAOS (minus a 2% fee that increases the floor price)</li>
+                    </ul>
+                    
+                    <p>Key supply characteristics:</p>
+                    <ul>
+                        <li><strong>Initial Supply</strong>: 1,000,000 $CHAOS (from GLA)</li>
+                        <li><strong>Maximum Supply</strong>: Unlimited, but growth is constrained by market demand and value added to the protocol</li>
+                        <li><strong>Supply Growth Rate</strong>: Directly correlated with protocol usage and market demand</li>
+                    </ul>
+                    
+                    <h3>$ORDER Supply</h3>
+                    <p>The supply of $ORDER can only increase when:</p>
+                    <ul>
+                        <li>Users mint new $ORDER loans by using their staked $CHAOS as collateral</li>
+                        <li>The loans are always collateralized at 1:1 ratio with the floor value of $CHAOS</li>
+                    </ul>
+                    
+                    <p>Key supply characteristics:</p>
+                    <ul>
+                        <li><strong>Initial Supply</strong>: 0 $ORDER (minted only as users create loans)</li>
+                        <li><strong>Maximum Supply</strong>: Limited by the total amount of staked $CHAOS and its floor value</li>
+                        <li><strong>Supply Growth Rate</strong>: Directly correlated with user borrowing demand</li>
+                    </ul>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">$ORDER Collateralization</h4>
+                        <p style="margin-bottom: 0;">Unlike traditional stablecoins, $ORDER is always fully collateralized by $CHAOS at its floor price. This means that even if the market price of $CHAOS falls, the collateralization ratio remains intact, eliminating liquidation risk.</p>
+                    </div>
+                    
+                    <h3>$prCHAOS Supply</h3>
+                    <p>The supply of $prCHAOS increases:</p>
+                    <ul>
+                        <li>At regular intervals based on the total supply of $CHAOS</li>
+                        <li>These rewards are distributed to $CHAOS stakers proportionally to their stake</li>
+                    </ul>
+                    
+                    <p>Key supply characteristics:</p>
+                    <ul>
+                        <li><strong>Initial Supply</strong>: 0 $prCHAOS</li>
+                        <li><strong>Emission Rate</strong>: 50% APR (of staked $CHAOS) in $prCHAOS rewards</li>
+                        <li><strong>Conversion Rate</strong>: Variable, starting at 2.5 $prCHAOS = 1 $CHAOS</li>
+                        <li><strong>Conversion Fee</strong>: 2% (goes to increasing the floor price)</li>
+                    </ul>
+                    
+                    <h2>Supply Visualization</h2>
+                    
+                    <h3>Current Token Supplies</h3>
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Token</th>
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Current Supply</th>
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Circulating Supply</th>
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Staked/Locked</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>$CHAOS</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">1,243,500</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">497,400 (40%)</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">746,100 (60%)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>$ORDER</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">2,238,300</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">2,238,300 (100%)</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">0 (0%)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>$prCHAOS</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">836,750</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">836,750 (100%)</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">0 (0%)</td>
+                        </tr>
+                    </table>
+                    
+                    <p><em>Note: Supply figures are as of Block #16,123,450 on Ethereum mainnet, roughly 3 months after protocol launch.</em></p>
+                    
+                    <h3>Protocol Metrics</h3>
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Metric</th>
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Value</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>$CHAOS Floor Price</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">$3.15</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>$CHAOS Market Price</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">$8.24</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>Total Value Locked (TVL)</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">$6,147,864</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>$prCHAOS Conversion Rate</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">2.3 $prCHAOS = 1 $CHAOS</td>
+                        </tr>
+                    </table>
+                    
+                    <h2>Funding the Protocol</h2>
+                    <p>Rather than allocating tokens for the team or investors, OrderNChaos uses a sustainable fee model to fund ongoing development and operations:</p>
+                    
+                    <h3>Fee Sources</h3>
+                    <ul>
+                        <li><strong>Trading Fees</strong>: 0.5% on all trades through the protocol-owned market 
+                            <ul>
+                                <li>80% goes to increasing the floor price</li>
+                                <li>20% goes to the protocol treasury</li>
+                            </ul>
+                        </li>
+                        <li><strong>Loan Fees</strong>: 0.1% one-time fee on minting $ORDER
+                            <ul>
+                                <li>50% goes to increasing the floor price</li>
+                                <li>50% goes to the protocol treasury</li>
+                            </ul>
+                        </li>
+                        <li><strong>Conversion Fees</strong>: 2% fee when converting $prCHAOS to $CHAOS
+                            <ul>
+                                <li>100% goes to increasing the floor price</li>
+                            </ul>
+                        </li>
+                        <li><strong>Stableswap Fees</strong> (Coming Soon): 0.04% on stablecoin swaps
+                            <ul>
+                                <li>50% distributed to stakers</li>
+                                <li>50% goes to the protocol treasury</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h3>Treasury Allocation</h3>
+                    <p>The protocol treasury funds are allocated according to the following guidelines:</p>
+                    
+                    <div style="width: 100%; text-align: center; margin: 30px 0;">
+                        <div style="max-width: 600px; margin: 0 auto;">
+                            <h4>Treasury Fund Allocation</h4>
+                            <div style="display: flex; height: 50px; border-radius: 4px; overflow: hidden; margin: 20px 0;">
+                                <div style="background-color: #4caf50; width: 40%; display: flex; align-items: center; justify-content: center; color: white;">40% - Development</div>
+                                <div style="background-color: #2196f3; width: 25%; display: flex; align-items: center; justify-content: center; color: white;">25% - Security</div>
+                                <div style="background-color: #ff9800; width: 20%; display: flex; align-items: center; justify-content: center; color: white;">20% - Marketing</div>
+                                <div style="background-color: #9c27b0; width: 15%; display: flex; align-items: center; justify-content: center; color: white;">15% - Community</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>Development (40%)</strong>: Funding for protocol improvements, new features, and technical infrastructure</li>
+                        <li><strong>Security (25%)</strong>: Ongoing security audits, bug bounties, and formal verification of smart contracts</li>
+                        <li><strong>Marketing (20%)</strong>: Education, content creation, and awareness campaigns</li>
+                        <li><strong>Community (15%)</strong>: Grants, incentives, and community-led initiatives</li>
+                    </ul>
+                    
+                    <p>This approach ensures that the protocol remains sustainable long-term without relying on token inflation or team allocations that could dilute holders.</p>
+                    
+                    <div style="background-color: #fff8e1; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Governance Transition</h4>
+                        <p style="margin-bottom: 0;">As outlined in the <a href="../../docs/project-launch/roadmap.html">Roadmap</a>, the protocol will gradually transition to decentralized community governance. When this transition occurs, treasury allocations will be determined by governance votes, allowing the community to direct resources as needed.</p>
+                    </div>
+                    
+                    <h2>Comparison with Traditional Token Models</h2>
+                    
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Feature</th>
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Traditional DeFi Projects</th>
+                            <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">OrderNChaos</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>Team Allocation</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">Typically 15-25% of supply</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">0% - No team allocation</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>Investor Allocation</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">Typically 30-50% to VCs and seed investors</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">0% - No investor allocation</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>Public Distribution</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">Usually 10-30% via IDO/IEO</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">100% via Genesis Launch Auction</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>Emission Schedule</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">Fixed or inflationary, often with high initial inflation</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">Driven by real usage and value creation</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 12px;"><strong>Value Backing</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">Typically minimal or none</td>
+                            <td style="border: 1px solid #ddd; padding: 12px;">100% backed by real liquidity and assets</td>
+                        </tr>
+                    </table>
+                    
+                    <p>For more details on how fees are collected and distributed, see the <a href="../../docs/more/fees.html">Fees</a> section.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Powered by GitBook</p>
+        </footer>
+    </div>
+</body>
+</html>

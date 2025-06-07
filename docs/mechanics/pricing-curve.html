@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderNChaos Documentation - Pricing Curve(vAMM)</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">OrderNChaos</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="shortcut">CtrlK</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li class="nav-section">
+                        <span class="section-title">Overview</span>
+                        <ul>
+                            <li><a href="../../docs/overview/introduction.html">Introduction</a></li>
+                            <li><a href="../../docs/overview/whats-the-difference.html">What's the Difference</a></li>
+                            <li><a href="../../docs/overview/quick-start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Project Launch</span>
+                        <ul>
+                            <li><a href="../../docs/project-launch/genesis-launch-auction.html">Genesis Launch Auction(GLA)</a></li>
+                            <li><a href="../../docs/project-launch/roadmap.html">Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Mechanics</span>
+                        <ul>
+                            <li><a href="../../docs/mechanics/pricing-curve.html">Pricing Curve(vAMM)</a></li>
+                            <li><a href="../../docs/mechanics/staking-rewards.html">Staking Rewards($prCHAOS)</a></li>
+                            <li><a href="../../docs/mechanics/zero-risk-loans.html">Zero Risk Loans ($ORDER)</a></li>
+                            <li><a href="../../docs/mechanics/stableswap.html">Stableswap(Coming soon)</a></li>
+                            <li><a href="../../docs/mechanics/nft-magic-power.html">NFT Magic Power(Coming soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Tokens</span>
+                        <ul>
+                            <li><a href="../../docs/tokens/order.html">$ORDER</a></li>
+                            <li><a href="../../docs/tokens/chaos.html">$CHAOS</a></li>
+                            <li><a href="../../docs/tokens/prchaos.html">$prCHAOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">More</span>
+                        <ul>
+                            <li><a href="../../docs/more/addresses.html">Addresses</a></li>
+                            <li><a href="../../docs/more/token-allocation.html">Token allocation</a></li>
+                            <li><a href="../../docs/more/fees.html">Fees</a></li>
+                            <li><a href="../../docs/more/risks.html">Risks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="page-header">
+                    <h1>Pricing Curve (vAMM)</h1>
+                    <p>Understanding the virtual Automated Market Maker mechanism</p>
+                    <div class="page-nav">
+                        <a href="../../docs/project-launch/roadmap.html" class="prev-link">Previous: Roadmap</a>
+                        <a href="../../docs/mechanics/staking-rewards.html" class="next-link">Next: Staking Rewards($prCHAOS)</a>
+                    </div>
+                    <p class="last-updated">Last updated 3 years ago</p>
+                </div>
+                
+                <div class="content-body">
+                    <h2>Introduction to the Pricing Curve</h2>
+                    <p>The OrderNChaos protocol uses a novel virtual Automated Market Maker (vAMM) to determine the price of $CHAOS tokens. Unlike traditional AMMs that require liquidity providers, the vAMM is a mathematical formula that creates a price curve based on the total supply of $CHAOS and the reserves held by the protocol.</p>
+                    
+                    <h3>Key Concepts</h3>
+                    
+                    <h4>Virtual Automated Market Maker (vAMM)</h4>
+                    <p>A vAMM is a type of market maker that doesn't require external liquidity providers. Instead, it uses a mathematical formula to determine the price based on the current state of the protocol. In OrderNChaos, the vAMM creates a price curve for $CHAOS that responds to buys and sells automatically.</p>
+                    
+                    <h4>Floor Price</h4>
+                    <p>The floor price is the minimum value of $CHAOS, backed by the protocol's reserves. This creates a price floor below which $CHAOS cannot fall, as the protocol guarantees to buy back $CHAOS at this price.</p>
+                    
+                    <h4>Market Price</h4>
+                    <p>The market price is the current price at which $CHAOS can be bought or sold through the vAMM. This price is determined by the vAMM formula and can exceed the floor price but cannot fall below it.</p>
+                    
+                    <h3>The vAMM Formula</h3>
+                    <p>The OrderNChaos vAMM uses a modified constant product formula that takes into account the floor price of $CHAOS. The basic formula is:</p>
+                    
+                    <div style="background-color: #f5f5f5; padding: 15px; text-align: center; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; margin: 20px 0;">
+                        price = k × (reserve / supply)^n + floor_price
+                    </div>
+                    
+                    <p>Where:</p>
+                    <ul>
+                        <li><strong>price</strong>: The current market price of $CHAOS</li>
+                        <li><strong>k</strong>: A constant that scales the curve</li>
+                        <li><strong>reserve</strong>: The amount of reserve assets in the protocol</li>
+                        <li><strong>supply</strong>: The total supply of $CHAOS tokens</li>
+                        <li><strong>n</strong>: An exponent that determines the curve's steepness</li>
+                        <li><strong>floor_price</strong>: The minimum value of $CHAOS, backed by reserves</li>
+                    </ul>
+                    
+                    <p>This formula ensures that as more $CHAOS is bought, the price increases exponentially, and as more is sold, the price decreases but never below the floor price.</p>
+                    
+                    <h3>The Price Curve Visualization</h3>
+                    
+                    <div style="background-color: #f0f8ff; padding: 20px; margin: 20px 0; text-align: center;">
+                        <img src="../../assets/pricing-curve.png" alt="Pricing Curve Visualization" style="max-width: 100%; height: auto;">
+                        <p style="font-style: italic; margin-top: 10px;">Figure 1: Visualization of the OrderNChaos pricing curve, showing how the market price relates to the floor price as the supply changes.</p>
+                    </div>
+                    
+                    <p>The visualization above shows how the market price of $CHAOS (blue line) is always at or above the floor price (red line). As the supply of $CHAOS increases, the market price approaches the floor price. As the supply decreases, the market price increases exponentially.</p>
+                    
+                    <h3>How the vAMM Works in Practice</h3>
+                    
+                    <h4>Buying $CHAOS</h4>
+                    <p>When a user buys $CHAOS tokens through the protocol:</p>
+                    <ol>
+                        <li>The user deposits stablecoins into the protocol's reserve.</li>
+                        <li>The vAMM calculates the amount of $CHAOS to mint based on the current price curve.</li>
+                        <li>New $CHAOS tokens are minted and sent to the user.</li>
+                        <li>The market price of $CHAOS increases according to the vAMM formula.</li>
+                    </ol>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Example: Buying $CHAOS</h4>
+                        <p>If the current market price of $CHAOS is $12, and a user deposits $1,200 worth of stablecoins, they would receive approximately 100 $CHAOS tokens (minus any fees). This purchase would cause the market price to increase according to the vAMM formula.</p>
+                    </div>
+                    
+                    <h4>Selling $CHAOS</h4>
+                    <p>When a user sells $CHAOS tokens back to the protocol:</p>
+                    <ol>
+                        <li>The user returns $CHAOS tokens to the protocol.</li>
+                        <li>The vAMM calculates the amount of stablecoins to return based on the current price curve.</li>
+                        <li>The $CHAOS tokens are burned.</li>
+                        <li>The user receives stablecoins from the protocol's reserve.</li>
+                        <li>The market price of $CHAOS decreases according to the vAMM formula, but never below the floor price.</li>
+                    </ol>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Example: Selling $CHAOS</h4>
+                        <p>If the current market price of $CHAOS is $15, and a user sells 100 $CHAOS tokens, they would receive approximately $1,500 worth of stablecoins (minus any fees). This sale would cause the market price to decrease according to the vAMM formula.</p>
+                    </div>
+                    
+                    <h3>The Rising Floor Mechanism</h3>
+                    <p>One of the unique features of the OrderNChaos protocol is the rising floor mechanism. As the protocol accumulates surplus value (from fees, market operations, etc.), a portion of this surplus is used to increase the floor price of $CHAOS.</p>
+                    
+                    <p>The rising floor works as follows:</p>
+                    <ol>
+                        <li>The protocol accumulates surplus value from various sources.</li>
+                        <li>Periodically, a portion of this surplus is allocated to increase the floor price.</li>
+                        <li>The floor price increases, providing a higher minimum value guarantee for all $CHAOS tokens.</li>
+                        <li>The increased floor price is permanent and cannot be reduced.</li>
+                    </ol>
+                    
+                    <p>This mechanism ensures that as the protocol grows and generates value, all $CHAOS holders benefit through a higher floor price, which permanently locks in gains.</p>
+                    
+                    <h3>Price Impact and Slippage</h3>
+                    <p>As with any AMM, large trades in the OrderNChaos protocol can experience price impact and slippage:</p>
+                    
+                    <h4>Price Impact</h4>
+                    <p>Price impact refers to how much a trade moves the market price. Due to the exponential nature of the vAMM curve, larger trades have a more significant impact on the price. The protocol calculates and displays the estimated price impact before a trade is executed.</p>
+                    
+                    <h4>Slippage</h4>
+                    <p>Slippage is the difference between the expected price of a trade and the actual executed price. To protect users from unexpected price changes, the protocol allows users to set a slippage tolerance. If the price moves beyond this tolerance during transaction processing, the transaction will revert.</p>
+                    
+                    <h3>Protocol Fees</h3>
+                    <p>The OrderNChaos protocol charges small fees on transactions through the vAMM. These fees serve several purposes:</p>
+                    
+                    <ul>
+                        <li><strong>Protocol Revenue</strong>: A portion of the fees contributes to the protocol's revenue, which can be used to increase the floor price.</li>
+                        <li><strong>Market Stability</strong>: Fees help prevent wash trading and other manipulative behaviors.</li>
+                        <li><strong>Sustainable Growth</strong>: By generating revenue, the protocol can sustain long-term growth and development.</li>
+                    </ul>
+                    
+                    <p>The current fee structure is:</p>
+                    <ul>
+                        <li><strong>Buy Fee</strong>: 0.5% of the transaction value</li>
+                        <li><strong>Sell Fee</strong>: 0.5% of the transaction value</li>
+                    </ul>
+                    
+                    <h3>Advantages of the vAMM Approach</h3>
+                    
+                    <h4>Capital Efficiency</h4>
+                    <p>Unlike traditional AMMs that require liquidity providers to lock up capital, the vAMM approach allows the protocol to operate with greater capital efficiency. All reserve assets are directly backed by the floor value of $CHAOS.</p>
+                    
+                    <h4>Predictable Price Discovery</h4>
+                    <p>The vAMM formula creates a predictable price curve that responds to market demand according to mathematical principles. This makes the price discovery process more transparent and less subject to manipulation.</p>
+                    
+                    <h4>Floor Price Guarantee</h4>
+                    <p>The vAMM ensures that the market price of $CHAOS never falls below the floor price, providing a safety net for $CHAOS holders and reducing downside risk.</p>
+                    
+                    <h4>Rising Floor Mechanism</h4>
+                    <p>The ability to increase the floor price over time creates a unique value proposition for long-term holders, as gains are permanently locked in through the rising floor.</p>
+                    
+                    <h3>Getting Started with the vAMM</h3>
+                    <p>To interact with the OrderNChaos vAMM, follow these steps:</p>
+                    
+                    <ol>
+                        <li><strong>Buy $CHAOS</strong>: Navigate to the "Buy" section of the OrderNChaos app, connect your wallet, and specify the amount of stablecoins you wish to use to purchase $CHAOS.</li>
+                        <li><strong>Sell $CHAOS</strong>: Navigate to the "Sell" section of the app, connect your wallet, and specify the amount of $CHAOS you wish to sell.</li>
+                        <li><strong>Monitor Prices</strong>: Keep track of the market price and floor price of $CHAOS in the "Statistics" section of the app.</li>
+                    </ol>
+                    
+                    <p>For more information about the $CHAOS token itself, see the <a href="../../docs/tokens/chaos.html">$CHAOS Token</a> section.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Powered by GitBook</p>
+        </footer>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderNChaos Documentation - Fees</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">OrderNChaos</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="shortcut">CtrlK</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li class="nav-section">
+                        <span class="section-title">Overview</span>
+                        <ul>
+                            <li><a href="../../docs/overview/introduction.html">Introduction</a></li>
+                            <li><a href="../../docs/overview/whats-the-difference.html">What's the Difference</a></li>
+                            <li><a href="../../docs/overview/quick-start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Project Launch</span>
+                        <ul>
+                            <li><a href="../../docs/project-launch/genesis-launch-auction.html">Genesis Launch Auction(GLA)</a></li>
+                            <li><a href="../../docs/project-launch/roadmap.html">Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Mechanics</span>
+                        <ul>
+                            <li><a href="../../docs/mechanics/pricing-curve.html">Pricing Curve(vAMM)</a></li>
+                            <li><a href="../../docs/mechanics/staking-rewards.html">Staking Rewards($prCHAOS)</a></li>
+                            <li><a href="../../docs/mechanics/zero-risk-loans.html">Zero Risk Loans ($ORDER)</a></li>
+                            <li><a href="../../docs/mechanics/stableswap.html">Stableswap(Coming soon)</a></li>
+                            <li><a href="../../docs/mechanics/nft-magic-power.html">NFT Magic Power(Coming soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Tokens</span>
+                        <ul>
+                            <li><a href="../../docs/tokens/order.html">$ORDER</a></li>
+                            <li><a href="../../docs/tokens/chaos.html">$CHAOS</a></li>
+                            <li><a href="../../docs/tokens/prchaos.html">$prCHAOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">More</span>
+                        <ul>
+                            <li><a href="../../docs/more/addresses.html">Addresses</a></li>
+                            <li><a href="../../docs/more/token-allocation.html">Token allocation</a></li>
+                            <li><a href="../../docs/more/fees.html">Fees</a></li>
+                            <li><a href="../../docs/more/risks.html">Risks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="page-header">
+                    <h1>Fees</h1>
+                    <p>Comprehensive overview of all fees in the OrderNChaos protocol</p>
+                    <div class="page-nav">
+                        <a href="../../docs/more/token-allocation.html" class="prev-link">Previous: Token allocation</a>
+                        <a href="../../docs/more/risks.html" class="next-link">Next: Risks</a>
+                    </div>
+                    <p class="last-updated">Last updated 3 years ago</p>
+                </div>
+                
+                <div class="content-body">
+                    <h2>Fee Structure Overview</h2>
+                    <p>The OrderNChaos protocol implements a carefully designed fee structure that balances user experience with protocol sustainability. All fees collected are used to benefit the ecosystem in various ways, including increasing the floor price of $CHAOS, funding development, and ensuring long-term protocol stability.</p>
+                    
+                    <div style="background-color: #e8f5e9; padding: 15px; border-left: 4px solid #4caf50; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Fee Philosophy</h4>
+                        <p style="margin-bottom: 0;">OrderNChaos follows a "value-for-value" approach to fees. We charge fees only where value is being created or exchanged, and we ensure that the fees collected are reinvested into the protocol to create even more value for all participants.</p>
+                    </div>
+                    
+                    <h3>vAMM Trading Fees</h3>
+                    <p>Fees charged on trades made through the virtual Automated Market Maker.</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Action</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Rate</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Distribution</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Buy $CHAOS</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.5%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">80% to floor price, 20% to protocol treasury</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Sell $CHAOS</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.5%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">80% to floor price, 20% to protocol treasury</td>
+                        </tr>
+                    </table>
+                    
+                    <p>Example: If you buy $1,000 worth of $CHAOS, you will pay a fee of $5 (0.5% of $1,000). Of this fee, $4 (80%) will contribute to increasing the floor price of $CHAOS, and $1 (20%) will go to the protocol treasury.</p>
+                    
+                    <h3>Staking and Reward Fees</h3>
+                    <p>Fees related to staking $CHAOS and claiming $prCHAOS rewards.</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Action</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Rate</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Distribution</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Stake $CHAOS</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">N/A</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Unstake $CHAOS</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">N/A</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Claim $prCHAOS rewards</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">N/A</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Convert $prCHAOS to $CHAOS</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">2%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">100% to floor price</td>
+                        </tr>
+                    </table>
+                    
+                    <p>Example: If you convert 100 $prCHAOS to $CHAOS (equivalent to 40 $CHAOS at the current conversion rate), you will pay a fee of 0.8 $CHAOS (2% of 40 $CHAOS). This entire fee will contribute to increasing the floor price of $CHAOS.</p>
+                    
+                    <h3>Zero Risk Loan Fees</h3>
+                    <p>Fees associated with minting and redeeming $ORDER tokens against staked $CHAOS.</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Action</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Rate</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Distribution</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Mint $ORDER (borrow)</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.1%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">50% to floor price, 50% to protocol treasury</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Repay $ORDER loan</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">N/A</td>
+                        </tr>
+                    </table>
+                    
+                    <p>Example: If you mint 1,000 $ORDER against your staked $CHAOS, you will pay a one-time fee of 1 $ORDER (0.1% of 1,000 $ORDER). Of this fee, 0.5 $ORDER (50%) will contribute to increasing the floor price of $CHAOS, and 0.5 $ORDER (50%) will go to the protocol treasury.</p>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Note on Negative Interest Rate</h4>
+                        <p style="margin-bottom: 0;">While there is a small one-time fee for minting $ORDER, borrowers continue to earn staking rewards on their collateralized $CHAOS, creating a net positive yield (negative interest rate) for borrowers. This is a unique feature of OrderNChaos's Zero Risk Loan system.</p>
+                    </div>
+                    
+                    <h3>Stableswap Fees (Coming Soon)</h3>
+                    <p>Fees for exchanging $ORDER with other stablecoins through the Stableswap feature.</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Action</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Rate</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Distribution</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Swap $ORDER for stablecoins</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.04%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">50% to stakers, 50% to protocol treasury</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Swap stablecoins for $ORDER</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.04%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">50% to stakers, 50% to protocol treasury</td>
+                        </tr>
+                    </table>
+                    
+                    <p>Example: If you swap 10,000 $ORDER for USDC, you will pay a fee of 4 $ORDER (0.04% of 10,000 $ORDER). Of this fee, 2 $ORDER (50%) will be distributed to $CHAOS stakers, and 2 $ORDER (50%) will go to the protocol treasury.</p>
+                    
+                    <h3>NFT Magic Power Fees (Coming Soon)</h3>
+                    <p>Fees related to the upcoming NFT Magic Power feature.</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Action</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Rate</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Fee Distribution</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Mint NFT</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">TBD</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">TBD</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Apply Magic Power</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">TBD</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">TBD</td>
+                        </tr>
+                    </table>
+                    
+                    <p>Note: The exact fee structure for NFT Magic Power will be announced closer to the feature release date.</p>
+                    
+                    <h3>Gas Optimization</h3>
+                    <p>While the OrderNChaos protocol charges fees as outlined above, we've designed our smart contracts to be gas-efficient to minimize the additional transaction costs users pay to the blockchain network.</p>
+                    
+                    <ul>
+                        <li><strong>Batch Processing</strong>: Where possible, actions are combined to reduce the number of separate transactions required.</li>
+                        <li><strong>Gas Optimization</strong>: Smart contracts are optimized for minimal gas usage.</li>
+                        <li><strong>Layer 2 Deployment</strong>: The protocol is deployed on Layer 2 solutions like Arbitrum and Optimism to provide lower gas costs compared to Ethereum mainnet.</li>
+                    </ul>
+                    
+                    <h3>Fee Usage and Benefits</h3>
+                    <p>The fees collected by the OrderNChaos protocol serve several important purposes:</p>
+                    
+                    <h4>Floor Price Appreciation</h4>
+                    <p>A significant portion of fees is used to increase the floor price of $CHAOS. This benefits all $CHAOS holders by:</p>
+                    <ul>
+                        <li>Increasing the minimum value of their $CHAOS tokens</li>
+                        <li>Enhancing the stability and security of the protocol</li>
+                        <li>Creating a permanent, irreversible increase in value (the floor price can only go up)</li>
+                    </ul>
+                    
+                    <h4>Protocol Treasury</h4>
+                    <p>Fees allocated to the treasury support the long-term development and sustainability of the protocol:</p>
+                    <ul>
+                        <li>Funding ongoing development and new features</li>
+                        <li>Supporting marketing and community growth initiatives</li>
+                        <li>Providing a safety buffer for unexpected events</li>
+                        <li>Eventually, supporting the transition to full DAO governance</li>
+                    </ul>
+                    
+                    <h4>Staker Rewards</h4>
+                    <p>Some fees (such as from the upcoming Stableswap feature) are distributed to $CHAOS stakers:</p>
+                    <ul>
+                        <li>Creating additional yield opportunities for stakers</li>
+                        <li>Incentivizing long-term participation in the protocol</li>
+                        <li>Aligning the interests of users and stakers</li>
+                    </ul>
+                    
+                    <div style="background-color: #fff8e1; padding: 15px; border-left: 4px solid #ffc107; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Fee Adjustments</h4>
+                        <p style="margin-bottom: 0;">The fee structure described above represents the initial implementation. In the future, as the protocol transitions to community governance, fee rates and distribution may be adjusted through governance proposals to best serve the long-term interests of the protocol and its participants.</p>
+                    </div>
+                    
+                    <h3>Fee Comparison</h3>
+                    <p>Compared to other DeFi protocols, OrderNChaos offers competitive fee rates:</p>
+                    
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Protocol/Service</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Trading Fee</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Borrowing Fee</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Staking Fee</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>OrderNChaos</strong></td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.5%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.1% (one-time)</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0% (2% on conversion)</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Typical AMM DEX</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.3% - 1.0%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">N/A</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0% - 2%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Typical Lending Protocol</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">N/A</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.5% - 1% + interest</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0% - 5%</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Centralized Exchange</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">0.1% - 0.5%</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Varies</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Varies</td>
+                        </tr>
+                    </table>
+                    
+                    <p>Note: The comparison above is meant to provide a general overview. Specific fee structures vary widely across protocols and may change over time.</p>
+                    
+                    <p>For more information about the protocol's economic model and token allocation, see the <a href="../../docs/more/token-allocation.html">Token Allocation</a> section.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Powered by GitBook</p>
+        </footer>
+    </div>
+</body>
+</html> 

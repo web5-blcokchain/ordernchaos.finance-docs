@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderNChaos Documentation - Staking Rewards($prCHAOS)</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">OrderNChaos</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="shortcut">CtrlK</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li class="nav-section">
+                        <span class="section-title">Overview</span>
+                        <ul>
+                            <li><a href="../../docs/overview/introduction.html">Introduction</a></li>
+                            <li><a href="../../docs/overview/whats-the-difference.html">What's the Difference</a></li>
+                            <li><a href="../../docs/overview/quick-start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Project Launch</span>
+                        <ul>
+                            <li><a href="../../docs/project-launch/genesis-launch-auction.html">Genesis Launch Auction(GLA)</a></li>
+                            <li><a href="../../docs/project-launch/roadmap.html">Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Mechanics</span>
+                        <ul>
+                            <li><a href="../../docs/mechanics/pricing-curve.html">Pricing Curve(vAMM)</a></li>
+                            <li><a href="../../docs/mechanics/staking-rewards.html">Staking Rewards($prCHAOS)</a></li>
+                            <li><a href="../../docs/mechanics/zero-risk-loans.html">Zero Risk Loans ($ORDER)</a></li>
+                            <li><a href="../../docs/mechanics/stableswap.html">Stableswap(Coming soon)</a></li>
+                            <li><a href="../../docs/mechanics/nft-magic-power.html">NFT Magic Power(Coming soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Tokens</span>
+                        <ul>
+                            <li><a href="../../docs/tokens/order.html">$ORDER</a></li>
+                            <li><a href="../../docs/tokens/chaos.html">$CHAOS</a></li>
+                            <li><a href="../../docs/tokens/prchaos.html">$prCHAOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">More</span>
+                        <ul>
+                            <li><a href="../../docs/more/addresses.html">Addresses</a></li>
+                            <li><a href="../../docs/more/token-allocation.html">Token allocation</a></li>
+                            <li><a href="../../docs/more/fees.html">Fees</a></li>
+                            <li><a href="../../docs/more/risks.html">Risks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="page-header">
+                    <h1>Staking Rewards ($prCHAOS)</h1>
+                    <p>Understanding the staking mechanism and $prCHAOS rewards</p>
+                    <div class="page-nav">
+                        <a href="../../docs/mechanics/pricing-curve.html" class="prev-link">Previous: Pricing Curve(vAMM)</a>
+                        <a href="../../docs/mechanics/zero-risk-loans.html" class="next-link">Next: Zero Risk Loans ($ORDER)</a>
+                    </div>
+                    <p class="last-updated">Last updated 3 years ago</p>
+                </div>
+                
+                <div class="content-body">
+                    <h2>Introduction to Staking in OrderNChaos</h2>
+                    <p>Staking is a core mechanic in the OrderNChaos ecosystem that allows $CHAOS token holders to earn rewards while strengthening the protocol. When users stake their $CHAOS tokens, they receive $prCHAOS tokens as rewards, creating a compounding mechanism that increases their $CHAOS holdings over time.</p>
+                    
+                    <h3>The Staking Process</h3>
+                    
+                    <h4>How Staking Works</h4>
+                    <ol>
+                        <li><strong>Stake $CHAOS</strong>: Users lock their $CHAOS tokens in the staking contract.</li>
+                        <li><strong>Earn $prCHAOS</strong>: Stakers receive $prCHAOS rewards based on their proportion of the total staked $CHAOS.</li>
+                        <li><strong>Claim and Convert</strong>: Users can claim their $prCHAOS rewards and convert them to $CHAOS.</li>
+                        <li><strong>Compound (Optional)</strong>: Users can stake their newly acquired $CHAOS to increase their stake and future rewards.</li>
+                    </ol>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Why Stake?</h4>
+                        <p>Staking provides multiple benefits:</p>
+                        <ul style="margin-bottom: 0;">
+                            <li>Earn $prCHAOS rewards that can be converted to more $CHAOS</li>
+                            <li>Qualify for Zero Risk Loans by using staked $CHAOS as collateral</li>
+                            <li>Contribute to protocol stability by reducing circulating supply</li>
+                            <li>Potential governance rights in future protocol upgrades</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>$prCHAOS Reward Mechanism</h3>
+                    
+                    <h4>Reward Distribution</h4>
+                    <p>$prCHAOS rewards are distributed to stakers based on the following principles:</p>
+                    
+                    <ul>
+                        <li><strong>Proportional Distribution</strong>: Rewards are distributed proportionally to each user's share of the total staked $CHAOS.</li>
+                        <li><strong>Continuous Accrual</strong>: Rewards accrue continuously while $CHAOS is staked.</li>
+                        <li><strong>Non-Transferable</strong>: $prCHAOS tokens cannot be transferred or traded, only redeemed for $CHAOS.</li>
+                        <li><strong>Dynamic Emission</strong>: The emission rate of $prCHAOS is calibrated to provide sustainable rewards.</li>
+                    </ul>
+                    
+                    <h4>Reward Calculation</h4>
+                    <p>The amount of $prCHAOS rewards a staker earns is calculated using the formula:</p>
+                    
+                    <div style="background-color: #f5f5f5; padding: 15px; text-align: center; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; margin: 20px 0;">
+                        Rewards = (User_Staked_CHAOS / Total_Staked_CHAOS) × Emission_Rate × Time_Period
+                    </div>
+                    
+                    <p>Where:</p>
+                    <ul>
+                        <li><strong>User_Staked_CHAOS</strong>: The amount of $CHAOS the user has staked</li>
+                        <li><strong>Total_Staked_CHAOS</strong>: The total amount of $CHAOS staked in the protocol</li>
+                        <li><strong>Emission_Rate</strong>: The rate at which $prCHAOS is emitted per unit of time</li>
+                        <li><strong>Time_Period</strong>: The duration for which rewards are calculated</li>
+                    </ul>
+                    
+                    <div style="background-color: #f0f8ff; padding: 15px; border-left: 4px solid #0052cc; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Example Calculation</h4>
+                        <p>Let's say you've staked 1,000 $CHAOS, and there are 100,000 $CHAOS tokens staked in total. If the emission rate is 0.1% per day, your daily rewards would be:</p>
+                        <p style="font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; margin: 10px 0; text-align: center;">
+                            (1,000 / 100,000) × 0.1% × 100,000 = 1 $prCHAOS per day
+                        </p>
+                        <p>Over a month (30 days), you would earn approximately 30 $prCHAOS tokens, which could be redeemed for additional $CHAOS tokens.</p>
+                    </div>
+                    
+                    <h3>Converting $prCHAOS to $CHAOS</h3>
+                    
+                    <h4>The Conversion Process</h4>
+                    <p>When users are ready to convert their $prCHAOS rewards to $CHAOS, they follow these steps:</p>
+                    
+                    <ol>
+                        <li><strong>Claim Rewards</strong>: Users claim their accumulated $prCHAOS rewards from the staking contract.</li>
+                        <li><strong>Convert to $CHAOS</strong>: Users convert their $prCHAOS to $CHAOS at the current conversion rate.</li>
+                        <li><strong>Receive $CHAOS</strong>: The protocol mints new $CHAOS tokens to the user's wallet, and the $prCHAOS tokens are burned.</li>
+                    </ol>
+                    
+                    <h4>Conversion Rate</h4>
+                    <p>The conversion rate from $prCHAOS to $CHAOS is designed to create sustainable value for stakers. It may adjust based on various protocol parameters to ensure long-term economic stability.</p>
+                    
+                    <p>Currently, the conversion rate is set such that each $prCHAOS token can be redeemed for a fraction of a $CHAOS token, with the exact rate determined by the protocol's algorithm.</p>
+                    
+                    <h3>Compounding Strategy</h3>
+                    
+                    <h4>Maximizing Returns Through Compounding</h4>
+                    <p>To maximize staking returns, users can implement a compounding strategy:</p>
+                    
+                    <ol>
+                        <li><strong>Regular Claiming</strong>: Claim $prCHAOS rewards at optimal intervals (balancing gas costs with compounding benefits).</li>
+                        <li><strong>Convert and Restake</strong>: Convert $prCHAOS to $CHAOS and immediately restake the newly acquired $CHAOS.</li>
+                        <li><strong>Repeat</strong>: Continue this process to benefit from compounding returns.</li>
+                    </ol>
+                    
+                    <div style="background-color: #f5f5f5; padding: 15px; margin: 20px 0;">
+                        <h4 style="margin-top: 0;">Compounding Example</h4>
+                        <p>Let's compare simple staking versus compounding over a year:</p>
+                        <p><strong>Scenario:</strong> Starting with 1,000 $CHAOS with a 20% annual reward rate</p>
+                        <ul>
+                            <li><strong>Simple Staking (claiming once at year-end):</strong><br>
+                                End of Year: 1,000 $CHAOS + 200 $CHAOS (from converted $prCHAOS) = 1,200 $CHAOS<br>
+                                Total Return: 20%</li>
+                            <li><strong>Monthly Compounding:</strong><br>
+                                End of Year: ~1,219 $CHAOS<br>
+                                Total Return: ~21.9%</li>
+                        </ul>
+                        <p>The power of compounding increases your returns by almost 2% in this example.</p>
+                    </div>
+                    
+                    <h3>Staking While Using Zero Risk Loans</h3>
+                    <p>One of the unique features of OrderNChaos is the ability to continue earning staking rewards even while using staked $CHAOS as collateral for Zero Risk Loans:</p>
+                    
+                    <ol>
+                        <li><strong>Stake $CHAOS</strong>: Stake your $CHAOS tokens in the protocol.</li>
+                        <li><strong>Mint $ORDER</strong>: Use your staked $CHAOS as collateral to mint $ORDER stablecoins.</li>
+                        <li><strong>Continue Earning</strong>: Your staked $CHAOS continues to earn $prCHAOS rewards even while serving as collateral.</li>
+                        <li><strong>Compound Normally</strong>: Claim and convert your $prCHAOS rewards as usual to increase your staked position.</li>
+                    </ol>
+                    
+                    <p>This mechanism creates a form of "negative interest" loan, where borrowers earn yield on their collateral instead of paying interest.</p>
+                    
+                    <h3>Staking Risks and Considerations</h3>
+                    
+                    <h4>Key Considerations</h4>
+                    <table style="width:100%; border-collapse: collapse; margin: 20px 0;">
+                        <tr style="background-color: #f0f0f0;">
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Consideration</th>
+                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Details</th>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Lockup Period</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">There is no mandatory lockup period. Users can unstake their $CHAOS at any time (unless it's being used as collateral for an active Zero Risk Loan).</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Gas Costs</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Consider the gas costs when claiming and converting rewards. For smaller positions, it may be more efficient to claim less frequently.</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Emission Changes</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">The emission rate of $prCHAOS may change over time based on protocol parameters, potentially affecting your returns.</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #ddd; padding: 8px;">Redemption Rate</td>
+                            <td style="border: 1px solid #ddd; padding: 8px;">The rate at which $prCHAOS can be converted to $CHAOS may vary, impacting the value of your rewards.</td>
+                        </tr>
+                    </table>
+                    
+                    <h3>Getting Started with Staking</h3>
+                    <p>To begin staking your $CHAOS tokens and earning $prCHAOS rewards, follow these steps:</p>
+                    
+                    <ol>
+                        <li><strong>Acquire $CHAOS</strong>: Purchase $CHAOS tokens through the protocol's instant-buy market.</li>
+                        <li><strong>Access the Staking Interface</strong>: Navigate to the "Stake" section of the OrderNChaos app.</li>
+                        <li><strong>Choose Staking Amount</strong>: Select the amount of $CHAOS you wish to stake.</li>
+                        <li><strong>Confirm Transaction</strong>: Approve the staking transaction through your wallet.</li>
+                        <li><strong>Monitor Rewards</strong>: Track your accumulating $prCHAOS rewards in the app dashboard.</li>
+                        <li><strong>Claim and Compound</strong>: Periodically claim your rewards, convert them to $CHAOS, and restake for optimal returns.</li>
+                    </ol>
+                    
+                    <p>For more detailed information about the $prCHAOS token itself, see the <a href="../../docs/tokens/prchaos.html">$prCHAOS Token</a> section.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Powered by GitBook</p>
+        </footer>
+    </div>
+</body>
+</html> 

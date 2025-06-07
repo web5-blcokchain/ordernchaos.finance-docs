@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderNChaos Documentation - Token Allocation</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">OrderNChaos</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="shortcut">CtrlK</span>
+            </div>
+        </header>
+        
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li class="nav-section">
+                        <span class="section-title">Overview</span>
+                        <ul>
+                            <li><a href="../../docs/overview/introduction.html">Introduction</a></li>
+                            <li><a href="../../docs/overview/whats-the-difference.html">What's the Difference</a></li>
+                            <li><a href="../../docs/overview/quick-start.html">Quick Start</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Project Launch</span>
+                        <ul>
+                            <li><a href="../../docs/project-launch/genesis-launch-auction.html">Genesis Launch Auction(GLA)</a></li>
+                            <li><a href="../../docs/project-launch/roadmap.html">Roadmap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Mechanics</span>
+                        <ul>
+                            <li><a href="../../docs/mechanics/pricing-curve.html">Pricing Curve(vAMM)</a></li>
+                            <li><a href="../../docs/mechanics/staking-rewards.html">Staking Rewards($prCHAOS)</a></li>
+                            <li><a href="../../docs/mechanics/zero-risk-loans.html">Zero Risk Loans ($ORDER)</a></li>
+                            <li><a href="../../docs/mechanics/stableswap.html">Stableswap(Coming soon)</a></li>
+                            <li><a href="../../docs/mechanics/nft-magic-power.html">NFT Magic Power(Coming soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">Tokens</span>
+                        <ul>
+                            <li><a href="../../docs/tokens/order.html">$ORDER</a></li>
+                            <li><a href="../../docs/tokens/chaos.html">$CHAOS</a></li>
+                            <li><a href="../../docs/tokens/prchaos.html">$prCHAOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-section">
+                        <span class="section-title">More</span>
+                        <ul>
+                            <li><a href="../../docs/more/addresses.html">Addresses</a></li>
+                            <li><a href="../../docs/more/token-allocation.html">Token allocation</a></li>
+                            <li><a href="../../docs/more/fees.html">Fees</a></li>
+                            <li><a href="../../docs/more/risks.html">Risks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="page-header">
+                    <h1>Token Allocation</h1>
+                    <p>How tokens are allocated in the OrderNChaos ecosystem</p>
+                    <div class="page-nav">
+                        <a href="../../docs/more/addresses.html" class="prev-link">Previous: Addresses</a>
+                        <a href="../../docs/more/fees.html" class="next-link">Next: Fees</a>
+                    </div>
+                    <p class="last-updated">Last updated 3 years ago</p>
+                </div>
+                
+                <div class="content-body">
+                    <p>$CHAOS & $ORDER are each token with intrinsic value. They cannot be minted out of thin air, and they never are. All $CHAOS tokens require at least their floor value's worth of liquidity in the protocol-owned market. All $ORDER tokens require at least their notional value of the collateral ($CHAOS) locked in the protocol.</p>
+                    
+                    <p>There are no "team allocations" of <code>$ORDER</code>, <code>$CHAOS</code>, or <code>$prCHAOS</code> tokens nor an "emission schedule" for their creation. ONC does not have a "fully diluted value."</p>
+                    
+                    <p>The protocol development, marketing, content-creation, and bug bounty campaigns are all funded through scalable fees.</p>
+                    
+                    <h2>Token Supply Mechanics</h2>
+                    
+                    <h3>$CHAOS Supply</h3>
+                    <p>The supply of $CHAOS can only increase when:</p>
+                    <ul>
+                        <li>New liquidity is added to the protocol-owned market</li>
+                        <li>The price of $CHAOS increases above its floor value</li>
+                        <li>Users purchase $CHAOS tokens from the protocol</li>
+                    </ul>
+                    
+                    <h3>$ORDER Supply</h3>
+                    <p>The supply of $ORDER can only increase when:</p>
+                    <ul>
+                        <li>Users mint new $ORDER loans by using their staked $CHAOS as collateral</li>
+                        <li>The loans are always collateralized at 1:1 ratio with the floor value of $CHAOS</li>
+                    </ul>
+                    
+                    <h3>$prCHAOS Supply</h3>
+                    <p>The supply of $prCHAOS increases:</p>
+                    <ul>
+                        <li>At regular intervals based on the total supply of $CHAOS</li>
+                        <li>These rewards are distributed to $CHAOS stakers proportionally to their stake</li>
+                    </ul>
+                    
+                    <h2>Funding the Protocol</h2>
+                    <p>Rather than allocating tokens for the team or investors, OrderNChaos uses a sustainable fee model to fund ongoing development and operations:</p>
+                    <ul>
+                        <li>Trading fees from the protocol-owned market</li>
+                        <li>Small fees on token minting and burning</li>
+                        <li>Optional premium features in the ecosystem</li>
+                    </ul>
+                    
+                    <p>This approach ensures that the protocol remains sustainable long-term without relying on token inflation or team allocations that could dilute holders.</p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Powered by GitBook</p>
+        </footer>
+    </div>
+</body>
+</html> 
